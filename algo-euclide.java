@@ -1,7 +1,9 @@
 
 import java.util.Scanner;
+import java.io.FileWriter;
 class Algo Euclide {
 	public static void main (String[] args){
+	   FileWriter writer = new FileWriter("test.csv");
 	   Scanner sc = new Scanner(System.in);
 	    System.out.println("- Calcul du PGCD -  made by 3 Lotfi Aymane ");
 	    System.out.println("A=");
@@ -26,6 +28,5 @@ class Algo Euclide {
 	        a=b;
 	        b=r;
 	    }
-	    System.out.println(a + " = " + b + " * " + (a/b) + " + " + r);
 	    System.out.print("PGCD(" + nb1 + ", " + nb2 + ") = " +result);
 	}}
